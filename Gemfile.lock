@@ -37,9 +37,21 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    columnize (0.3.6)
+    debugger (1.6.4)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.0)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    haml (4.0.4)
+      tilt
     hike (1.2.3)
+    hue (0.1.2)
+      multi_json
+      thor
     i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (3.0.4)
@@ -103,6 +115,9 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  debugger
+  haml
+  hue
   jquery-rails
   rails (= 3.2.14)
   sass-rails (~> 3.2.3)

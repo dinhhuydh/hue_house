@@ -1,0 +1,9 @@
+= link_to 'All off', all_off_lights_path, remote: true
+= link_to 'All on', all_on_lights_path, remote: true
+
+- Light.lights.each do |light|
+  .light-fields{style: {color: light.hue} }
+    - Light.light_fields.each do |field_name|
+      .field
+        %lable= field_name.to_s
+        .value= light.send(field_name)
